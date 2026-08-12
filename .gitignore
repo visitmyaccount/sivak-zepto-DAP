@@ -1,6 +1,7 @@
 .DS_Store
 .env
 .env.*
+SECURITY.md
 .venv/
 venv/
 __pycache__/

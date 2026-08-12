@@ -51,4 +51,4 @@ The data pipeline uses a normalized two-table database so categories are stored 
 
 ## Public repository safety
 
-Do not commit real environment files or credentials. Read [SECURITY.md](SECURITY.md) before making changes.
+Do not commit real environment files or credentials.
