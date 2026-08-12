@@ -1,0 +1,23 @@
+.DS_Store
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local model and vector database files
+.cache/
+support_assistant/chroma_db/
+support_assistant/model_cache/
+
+# Temporary and editor files
+*.log
+*.tmp
+*.swp
+.idea/
+.vscode/

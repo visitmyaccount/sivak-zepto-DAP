@@ -1,0 +1,5 @@
+# Copy these names into your shell environment when needed.
+# Never place real values in this file.
+MOCK_LLM=1
+GROQ_API_KEY=<set-in-shell-only>
+GROQ_MODEL=openai/gpt-oss-20b
