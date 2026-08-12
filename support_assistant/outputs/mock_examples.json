@@ -1,0 +1,22 @@
+{
+  "policy_question": {
+    "query": "What is the delivery fee for a small order?",
+    "response": {
+      "answer": "Based on the retrieved context: Zepto delivers grocery and household essentials to serviceable pin codes within 10 to 30 minutes of order confirmation, depending on the customer's delivery zone and current order volume. Standard del...",
+      "sources": [
+        "doc_01_chunk_00",
+        "doc_05_chunk_00",
+        "doc_02_chunk_00"
+      ],
+      "confidence": 1.0
+    }
+  },
+  "general_question": {
+    "query": "Who won the football match?",
+    "response": {
+      "answer": "I can only answer questions about Zepto policies right now.",
+      "sources": [],
+      "confidence": 1.0
+    }
+  }
+}
