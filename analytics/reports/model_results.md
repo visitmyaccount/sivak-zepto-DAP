@@ -59,7 +59,7 @@ Classification and regression results are kept in separate metric columns becaus
 
 ## Recommendation
 
-I would deploy the **Random Forest** classifier from the three-model comparison. It achieved F1 0.750, accuracy 0.821, and AUC 0.830 on the held-out test set. Its recall of 0.696 is important because a survival model should not overlook too many positive cases. These results are based on one small historical dataset, so I would continue checking the model on new data before using it for an important decision.
+For this project, I selected the **Random Forest** classifier as the best of the three models compared. It achieved F1 0.750, accuracy 0.821, and AUC 0.830 on the held-out test set. This does not make it ready for real-world deployment because the results come from one split of a small historical dataset. Its recall of 0.696 also shows that it still misses some positive cases, so more validation with relevant data would be needed before considering practical use.
 
 ## Saved pipeline check
 

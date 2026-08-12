@@ -90,6 +90,6 @@ Classification and regression numbers are kept in separate metric groups in [rep
 
 ## Recommendation and saved model
 
-I would deploy the Random Forest from the three-model comparison. It produced the highest F1 (0.750) and accuracy (0.821), while its AUC was 0.830. Recall of 0.696 still leaves room to improve positive-case detection. Because this is a small historical dataset, I would continue checking the model on new data before using it for an important decision.
+For this project, I selected the Random Forest as the best of the three models compared. It produced the highest F1 (0.750) and accuracy (0.821), while its AUC was 0.830. However, this does not mean the model is ready for real-world deployment. The results come from one split of a small historical dataset, and recall of 0.696 means it still misses some positive cases. More validation with relevant data would be needed before considering practical use.
 
 The selected complete preprocessing-plus-classifier pipeline is saved at `models/best_classifier_pipeline.joblib`. The reload script passes a raw row containing unscaled numbers and unencoded text directly to that saved object and successfully returns a prediction.
