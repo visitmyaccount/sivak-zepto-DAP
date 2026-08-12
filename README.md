@@ -20,13 +20,21 @@ source .venv/bin/activate
 Then follow the module README files in this order:
 
 1. [Data pipeline](data_pipeline/README.md)
-2. `analytics/README.md`
+2. [Analytics pipeline](analytics/README.md)
 3. `support_assistant/README.md`
 
 The data pipeline can be run from the repository root after installing its requirements:
 
 ```bash
 python data_pipeline/run_pipeline.py
+```
+
+The analytics scripts continue from the single committed Titanic CSV:
+
+```bash
+python analytics/01_eda.py
+python analytics/02_modeling.py
+python analytics/predict_saved_model.py
 ```
 
 ## Design summary
