@@ -34,6 +34,7 @@ def request_validated_json(
                 "json_schema": {
                     "name": response_model.__name__.lower(),
                     "schema": response_model.model_json_schema(),
+                    "strict": True,
                 },
             },
             temperature=0,

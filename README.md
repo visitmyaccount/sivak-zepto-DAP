@@ -21,7 +21,7 @@ Then follow the module README files in this order:
 
 1. [Data pipeline](data_pipeline/README.md)
 2. [Analytics pipeline](analytics/README.md)
-3. `support_assistant/README.md`
+3. [Support assistant](support_assistant/README.md)
 
 The data pipeline can be run from the repository root after installing its requirements:
 
@@ -35,6 +35,14 @@ The analytics scripts continue from the single committed Titanic CSV:
 python analytics/01_eda.py
 python analytics/02_modeling.py
 python analytics/predict_saved_model.py
+```
+
+The support API defaults to its fully offline mock generation path:
+
+```bash
+python support_assistant/ingest.py
+cd support_assistant
+MOCK_LLM=1 uvicorn main:app --host 0.0.0.0 --port 7860
 ```
 
 ## Design summary

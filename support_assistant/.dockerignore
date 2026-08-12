@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+chroma_db/
+model_cache/
+.cache/
+outputs/
