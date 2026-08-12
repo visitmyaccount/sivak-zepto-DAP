@@ -1,0 +1,178 @@
+Zepto Data Pipeline - SQL and pandas results
+================================================
+
+1. Ten expensive in-stock books
+-------------------------------
+                                                                 title  price_gbp  price_inr  rating
+                                         Boar Island (Anna Pigeon #19)      59.48    6275.14       3
+The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70    6087.35       4
+                                                              El Deafo      57.62    6078.91       5
+                      Ajin: Demi-Human, Volume 1 (Ajin: Demi-Human #1)      57.06    6019.83       4
+                                  Giant Days, Vol. 1 (Giant Days #1-4)      56.76    5988.18       4
+                                                   The Past Never Ends      56.50    5960.75       4
+                                      The Last Painting of Sara de Vos      55.55    5860.53       2
+         The Sandman, Vol. 3: Dream Country (The Sandman (volumes) #3)      55.55    5860.53       5
+                               A Flight of Arrows (The Pathfinders #2)      55.53    5858.42       5
+      The Sandman, Vol. 2: The Doll's House (The Sandman (volumes) #2)      54.81    5782.46       1
+
+2. Distinct categories
+----------------------
+     category_name
+Historical Fiction
+           Mystery
+    Sequential Art
+
+3. Books in a middle GBP price range
+------------------------------------
+                                                                            title  price_gbp  rating
+                                             Blood Defense (Samantha Brinkman #1)      20.30       3
+                                                             Love, Lies and Spies      20.55       2
+                                                           Between Shades of Gray      20.79       5
+                                 Delivering the Truth (Quaker Midwife Mystery #1)      20.89       4
+                                         Fruits Basket, Vol. 6 (Fruits Basket #6)      20.96       4
+                                                           Voyager (Outlander #3)      21.07       5
+                                    Saga, Volume 3 (Saga (Collected Editions) #3)      21.57       5
+                                           Paper Girls, Vol. 1 (Paper Girls #1-5)      21.71       4
+                                             Giant Days, Vol. 2 (Giant Days #5-8)      22.11       2
+                                                The Silkworm (Cormoran Strike #2)      23.05       5
+                                              Career of Evil (Cormoran Strike #3)      24.72       2
+                              The Mysterious Affair at Styles (Hercule Poirot #1)      24.80       4
+                What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37       5
+                                                                Through the Woods      25.38       2
+                                               Extreme Prey (Lucas Davenport #26)      25.40       3
+                Red Hood/Arsenal, Vol. 1: Open for Business (Red Hood/Arsenal #1)      25.48       2
+                                                                         Starlark      25.83       3
+                                                        Girl With a Pearl Earring      26.77       1
+                                                 Poisonous (Max Revere Novels #3)      26.80       3
+                                                                        The Widow      27.26       2
+                                                            Lost Among the Living      27.70       4
+ The Demon Prince of Momochi House, Vol. 4 (The Demon Prince of Momochi House #4)      27.88       2
+                                                        The Marriage of Opposites      28.08       4
+                                                            The Passion of Dolssa      28.32       5
+                                    Saga, Volume 1 (Saga (Collected Editions) #1)      28.48       1
+I Hate Fairyland, Vol. 1: Madly Ever After (I Hate Fairyland (Compilations) #1-5)      29.17       2
+        Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton      29.69       3
+             Ouran High School Host Club, Vol. 1 (Ouran High School Host Club #1)      29.87       3
+
+4. Books with selected ratings
+------------------------------
+                                                                            title  rating  price_gbp
+                                          A Flight of Arrows (The Pathfinders #2)       5      55.53
+                                A Spy's Devotion (The Regency Spies of London #1)       5      16.97
+                                           A Time of Torment (Charlie Parker #14)       5      48.35
+                                         Batman: The Dark Knight Returns (Batman)       5      15.38
+                                                           Between Shades of Gray       5      20.79
+                      Bleach, Vol. 1: Strawberry and the Soul Reapers (Bleach #1)       5      34.65
+                                                                         El Deafo       5      57.62
+                                         Fruits Basket, Vol. 1 (Fruits Basket #1)       5      40.28
+                                         Fruits Basket, Vol. 2 (Fruits Basket #2)       5      11.64
+                                                                     Mrs. Houdini       5      30.25
+Princess Jellyfish 2-in-1 Omnibus, Vol. 01 (Princess Jellyfish 2-in-1 Omnibus #1)       5      13.61
+        Rat Queens, Vol. 1: Sass & Sorcery (Rat Queens (Collected Editions) #1-5)       5      46.96
+                                                                      Roller Girl       5      14.10
+                                    Saga, Volume 3 (Saga (Collected Editions) #3)       5      21.57
+                          Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)       5      52.29
+
+5. Ten highest-rated books in each category
+-------------------------------------------
+                                                                            title  rating  price_gbp           category  category_rank
+                                          A Flight of Arrows (The Pathfinders #2)       5      55.53 Historical Fiction              1
+                                                              While You Were Mine       5      41.32 Historical Fiction              2
+                                                                     The Red Tent       5      35.66 Historical Fiction              3
+                                                                     Mrs. Houdini       5      30.25 Historical Fiction              4
+                                                            The Passion of Dolssa       5      28.32 Historical Fiction              5
+                                                           Voyager (Outlander #3)       5      21.07 Historical Fiction              6
+                                                           Between Shades of Gray       5      20.79 Historical Fiction              7
+                                A Spy's Devotion (The Regency Spies of London #1)       5      16.97 Historical Fiction              8
+                                                                A Paris Apartment       4      39.01 Historical Fiction              9
+                                  World Without End (The Pillars of the Earth #2)       4      32.97 Historical Fiction             10
+         The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)       5      52.30            Mystery              1
+                                           A Time of Torment (Charlie Parker #14)       5      48.35            Mystery              2
+                What Happened on Beale Street (Secrets of the South Mysteries #2)       5      25.37            Mystery              3
+                                                The Silkworm (Cormoran Strike #2)       5      23.05            Mystery              4
+                                                                The Girl You Lost       5      12.29            Mystery              5
+           The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)       4      57.70            Mystery              6
+                                                              The Past Never Ends       4      56.50            Mystery              7
+                            Murder at the 42nd Street Library (Raymond Ambler #1)       4      54.36            Mystery              8
+                                                                    Sharp Objects       4      47.82            Mystery              9
+                                  The Murder of Roger Ackroyd (Hercule Poirot #4)       4      44.10            Mystery             10
+                                                                         El Deafo       5      57.62     Sequential Art              1
+                    The Sandman, Vol. 3: Dream Country (The Sandman (volumes) #3)       5      55.55     Sequential Art              2
+                          Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)       5      52.29     Sequential Art              3
+        Rat Queens, Vol. 1: Sass & Sorcery (Rat Queens (Collected Editions) #1-5)       5      46.96     Sequential Art              4
+                                         Fruits Basket, Vol. 1 (Fruits Basket #1)       5      40.28     Sequential Art              5
+                      Bleach, Vol. 1: Strawberry and the Soul Reapers (Bleach #1)       5      34.65     Sequential Art              6
+                                    Saga, Volume 3 (Saga (Collected Editions) #3)       5      21.57     Sequential Art              7
+                                         Batman: The Dark Knight Returns (Batman)       5      15.38     Sequential Art              8
+                                                                      Roller Girl       5      14.10     Sequential Art              9
+Princess Jellyfish 2-in-1 Omnibus, Vol. 01 (Princess Jellyfish 2-in-1 Omnibus #1)       5      13.61     Sequential Art             10
+
+pd.read_sql JOIN result
+-----------------------
+                                                                            title  rating  price_gbp           category  category_rank
+                                          A Flight of Arrows (The Pathfinders #2)       5      55.53 Historical Fiction              1
+                                                              While You Were Mine       5      41.32 Historical Fiction              2
+                                                                     The Red Tent       5      35.66 Historical Fiction              3
+                                                                     Mrs. Houdini       5      30.25 Historical Fiction              4
+                                                            The Passion of Dolssa       5      28.32 Historical Fiction              5
+                                                           Voyager (Outlander #3)       5      21.07 Historical Fiction              6
+                                                           Between Shades of Gray       5      20.79 Historical Fiction              7
+                                A Spy's Devotion (The Regency Spies of London #1)       5      16.97 Historical Fiction              8
+                                                                A Paris Apartment       4      39.01 Historical Fiction              9
+                                  World Without End (The Pillars of the Earth #2)       4      32.97 Historical Fiction             10
+         The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)       5      52.30            Mystery              1
+                                           A Time of Torment (Charlie Parker #14)       5      48.35            Mystery              2
+                What Happened on Beale Street (Secrets of the South Mysteries #2)       5      25.37            Mystery              3
+                                                The Silkworm (Cormoran Strike #2)       5      23.05            Mystery              4
+                                                                The Girl You Lost       5      12.29            Mystery              5
+           The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)       4      57.70            Mystery              6
+                                                              The Past Never Ends       4      56.50            Mystery              7
+                            Murder at the 42nd Street Library (Raymond Ambler #1)       4      54.36            Mystery              8
+                                                                    Sharp Objects       4      47.82            Mystery              9
+                                  The Murder of Roger Ackroyd (Hercule Poirot #4)       4      44.10            Mystery             10
+                                                                         El Deafo       5      57.62     Sequential Art              1
+                    The Sandman, Vol. 3: Dream Country (The Sandman (volumes) #3)       5      55.55     Sequential Art              2
+                          Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)       5      52.29     Sequential Art              3
+        Rat Queens, Vol. 1: Sass & Sorcery (Rat Queens (Collected Editions) #1-5)       5      46.96     Sequential Art              4
+                                         Fruits Basket, Vol. 1 (Fruits Basket #1)       5      40.28     Sequential Art              5
+                      Bleach, Vol. 1: Strawberry and the Soul Reapers (Bleach #1)       5      34.65     Sequential Art              6
+                                    Saga, Volume 3 (Saga (Collected Editions) #3)       5      21.57     Sequential Art              7
+                                         Batman: The Dark Knight Returns (Batman)       5      15.38     Sequential Art              8
+                                                                      Roller Girl       5      14.10     Sequential Art              9
+Princess Jellyfish 2-in-1 Omnibus, Vol. 01 (Princess Jellyfish 2-in-1 Omnibus #1)       5      13.61     Sequential Art             10
+
+pd.merge JOIN result
+--------------------
+                                                                            title  rating  price_gbp           category  category_rank
+                                          A Flight of Arrows (The Pathfinders #2)       5      55.53 Historical Fiction              1
+                                                              While You Were Mine       5      41.32 Historical Fiction              2
+                                                                     The Red Tent       5      35.66 Historical Fiction              3
+                                                                     Mrs. Houdini       5      30.25 Historical Fiction              4
+                                                            The Passion of Dolssa       5      28.32 Historical Fiction              5
+                                                           Voyager (Outlander #3)       5      21.07 Historical Fiction              6
+                                                           Between Shades of Gray       5      20.79 Historical Fiction              7
+                                A Spy's Devotion (The Regency Spies of London #1)       5      16.97 Historical Fiction              8
+                                                                A Paris Apartment       4      39.01 Historical Fiction              9
+                                  World Without End (The Pillars of the Earth #2)       4      32.97 Historical Fiction             10
+         The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)       5      52.30            Mystery              1
+                                           A Time of Torment (Charlie Parker #14)       5      48.35            Mystery              2
+                What Happened on Beale Street (Secrets of the South Mysteries #2)       5      25.37            Mystery              3
+                                                The Silkworm (Cormoran Strike #2)       5      23.05            Mystery              4
+                                                                The Girl You Lost       5      12.29            Mystery              5
+           The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)       4      57.70            Mystery              6
+                                                              The Past Never Ends       4      56.50            Mystery              7
+                            Murder at the 42nd Street Library (Raymond Ambler #1)       4      54.36            Mystery              8
+                                                                    Sharp Objects       4      47.82            Mystery              9
+                                  The Murder of Roger Ackroyd (Hercule Poirot #4)       4      44.10            Mystery             10
+                                                                         El Deafo       5      57.62     Sequential Art              1
+                    The Sandman, Vol. 3: Dream Country (The Sandman (volumes) #3)       5      55.55     Sequential Art              2
+                          Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)       5      52.29     Sequential Art              3
+        Rat Queens, Vol. 1: Sass & Sorcery (Rat Queens (Collected Editions) #1-5)       5      46.96     Sequential Art              4
+                                         Fruits Basket, Vol. 1 (Fruits Basket #1)       5      40.28     Sequential Art              5
+                      Bleach, Vol. 1: Strawberry and the Soul Reapers (Bleach #1)       5      34.65     Sequential Art              6
+                                    Saga, Volume 3 (Saga (Collected Editions) #3)       5      21.57     Sequential Art              7
+                                         Batman: The Dark Knight Returns (Batman)       5      15.38     Sequential Art              8
+                                                                      Roller Girl       5      14.10     Sequential Art              9
+Princess Jellyfish 2-in-1 Omnibus, Vol. 01 (Princess Jellyfish 2-in-1 Omnibus #1)       5      13.61     Sequential Art             10
+
+Equality check: PASSED
