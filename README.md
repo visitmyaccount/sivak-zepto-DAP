@@ -19,9 +19,15 @@ source .venv/bin/activate
 
 Then follow the module README files in this order:
 
-1. `data_pipeline/README.md`
+1. [Data pipeline](data_pipeline/README.md)
 2. `analytics/README.md`
 3. `support_assistant/README.md`
+
+The data pipeline can be run from the repository root after installing its requirements:
+
+```bash
+python data_pipeline/run_pipeline.py
+```
 
 ## Design summary
 
